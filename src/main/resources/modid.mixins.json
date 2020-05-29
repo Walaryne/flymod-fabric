@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "com.walaryne.flymod.mixin.ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

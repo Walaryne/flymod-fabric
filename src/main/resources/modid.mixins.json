@@ -1,14 +1,1 @@
-{
-  "required": true,
-  "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "mixins": [
-  ],
-  "client": [
-    "com.walaryne.flymod.mixin.ExampleMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
-}
+{}

@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Walaryne's Fly Mod - Fabric Edition
 
-## Setup
+## Intro
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Nothing much here for now, check back later!
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Licenced under LGPL-3.0

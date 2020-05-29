@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "id": "flymod",
-  "version": "${version}",
+  "version": "0.1.0-fabric",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Walaryne's Fly Mod",
+  "description": "A simple serverside mod for flight (works in SP too!)",
   "authors": [
     "Walaryne"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/walarynes-flymod",
+    "sources": "https://github.com/Walaryne/flymod-fabric"
   },
 
   "license": "CC0-1.0",
@@ -22,9 +22,6 @@
       "com.walaryne.flymod.FlyModInitialization"
     ]
   },
-  "mixins": [
-    "flymod.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.7.4",

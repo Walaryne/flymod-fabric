@@ -18,6 +18,7 @@ import static net.minecraft.server.command.CommandManager.literal;
 public class FlyCommand {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, boolean dedicated) {
         dispatcher.register(literal("fly")
+                .requires(source -> source.hasPermissionLevel(2))
                 .then(argument("targets", EntityArgumentType.players())
                         .executes(ctx -> fly(ctx.getSource(), getPlayers(ctx, "targets"))))
                 .executes(ctx -> fly(ctx.getSource(), null)));

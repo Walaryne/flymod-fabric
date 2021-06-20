@@ -2,7 +2,7 @@ package com.walaryne.flymod;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.minecraft.command.arguments.EntityArgumentType;
+import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
@@ -10,7 +10,7 @@ import net.minecraft.text.TranslatableText;
 
 import java.util.Collection;
 
-import static net.minecraft.command.arguments.EntityArgumentType.getPlayers;
+import static net.minecraft.command.argument.EntityArgumentType.getPlayers;
 import static net.minecraft.server.command.CommandManager.argument;
 import static net.minecraft.server.command.CommandManager.literal;
 
@@ -38,12 +38,12 @@ public class FlyCommand {
     private static void handlePlayers(ServerPlayerEntity player, ServerCommandSource source) {
         final Text name = player.getName();
 
-        if (!player.abilities.allowFlying) {
-            player.abilities.allowFlying = true;
+        if (!player.getAbilities().allowFlying) {
+            player.getAbilities().allowFlying = true;
             source.sendFeedback(new TranslatableText("commands.fly.successfulon", name), false);
         } else {
-            player.abilities.allowFlying = false;
-            player.abilities.flying = false;
+            player.getAbilities().allowFlying = false;
+            player.getAbilities().flying = false;
             source.sendFeedback(new TranslatableText("commands.fly.successfuloff", name), false);
         }
 
